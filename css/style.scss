@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import '../font/turbo.scss';
+
+// OWL
+// @import "owl.carousel.min.scss";
+// @import "owl.theme.default.scss";
+
+*{box-sizing:border-box;}
+html,body{margin:0;font-family: 'Roboto', sans-serif;}
+.cf,.clear,.clearfix{clear:both;}
+div{float:left;display:block;width:100%;}
+
+
+#products{
+    max-width:1200px;
+    margin: 0 auto;
+    float:none;
+}
+body{
+    padding: 100px;
+}
+.output{
+    padding: 20px;
+    background:#eee;
+    margin: 0 0 10px 0;
+}
+
+.pod{
+    width:25%;
+    padding: 10px;
+}
+.product{
+    position:relative;
+    width:100%;
+    margin: 0 0 10px 0;
+    padding:10px;
+    border-radius:5px;
+    border:2px solid #96c6bd;
+    // padding: 8px;
+    // border:1px solid #aaa;
+}
+.options{
+    width:100%;
+    padding: 20px;
+    font-size:15px;
+}
+.info{
+    margin: 50px 0 200px 0;
+    padding: 50px;
+    background:#eee;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+.info .pod{
+    width:50%;
+}
+.options h3{
+    margin: 0 0 20px 0;
+}
+fieldset{
+    width:100%;
+    border:none;
+    position: relative;
+    // box-shadow: 0 0 20px 3px #ddd;
+}
+.pod label{
+    width:100%;
+    margin: 5px 0 5px 0;
+    display:block;
+}
+input[type="text"]{
+    width:100%;
+    padding: 8px;
+
+    font-size:20px;
+    margin: 0 0 10px 0;
+}
+.plus{
+    float:right;
+    margin: 0 0 20px 0;
+    padding: 8px 24px;
+    background:#777;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    color:#fff;
+    font-weight:bold;
+    border:none;
+    font-size:20px;
+}
+.remove{
+    position:absolute;
+    top:2px;
+    right:2px;
+    width:20px;
+    height:20px;
+    text-align:center;
+}
+.spec{
+    padding: 0 10px;
+}
+.spec ul{
+    list-style:none;
+    width:500px;
+    padding:0;
+    float:left;
+    margin: 0 0 40px 0;
+}
+.spec ul li{
+    width:100%;
+    display: block;
+}
+.spec ul li input{
+    width:300px;
+    height:40px;
+    float:left;
+}
+.spec ul li button{
+    height:40px;
+    float:left;
+    margin:0 0 0 5px;
+    width:40px;
+}
+.build{
+    float:right;
+    margin: 0 0 20px 0;
+    padding: 8px 24px;
+    background:green;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    color:#fff;
+    font-weight:bold;
+    border:none;
+    font-size:20px;
+}
+
+
+pre,code{
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+
+
+.clear{
+    float:right;
+    margin: 0 0 20px 0;
+    padding: 8px 24px;
+    background:red;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    color:#fff;
+    font-weight:bold;
+    border:none;
+    font-size:20px;
+}
+
+.sub{
+    width:32%;
+    margin: 0 2% 0 0;
+}
+.sub img{
+    max-width:100%;
+}
+.sub input:checked + label{
+    border:2px solid green;
+}
+.sub label{
+    text-transform: uppercase;
+    font-size:12px;
+
+
+    float:left;
+    padding: 20px;
+    border:2px solid #ddd;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+.sub:last-child{margin:0;}
+.sub input{display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

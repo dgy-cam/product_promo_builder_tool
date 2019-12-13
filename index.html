@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Boilerplate</title>
+
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.min.css">
+
+        <script src="js/jquery.3.4.1.min.js"></script>
+
+        <!-- Owl 2 JS -->
+        <!-- <script src="js/owl.carousel.min.js" charset="utf-8"></script> -->
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+
+
+
+        <div id="products">
+            <p style="color:red;">Warning: refreshing this page will wipe input values.</p>
+            <div>
+                <button class="build">Build</button>
+                <div class="output"><pre><code>code will appear here</code></pre></div>
+
+                <div class="options">
+                    <h3>Type</h3>
+                    <div class="sub">
+                        <input class="type" type="radio" checked name="type" id="single1" value="single">
+                        <label for="single1">Single Product Promo
+                        <img src="img/single1.jpg" alt=""></label>
+                    </div>
+                    <div class="sub">
+                        <input class="type" type="radio" name="type" id="single2" value="single">
+                        <label for="single2">Single Product Variant List
+                        <img src="img/single2.jpg" alt=""></label></label>
+                    </div>
+                    <div class="sub">
+                        <input class="type" type="radio" name="type" id="bundle" value="bundle">
+                        <label for="bundle">Bundle
+                        <img src="img/bundle.jpg" alt=""></label></label>
+                    </div>
+                </div>
+
+
+                <fieldset>
+                    <h3>Products</h3>
+
+
+                    <div class="product_holder">
+                        <div class="product">
+                            <div class="pod">
+                                <label for="">Product handle</label>
+                                <input type="text" class="handle">
+                            </div>
+                            <div class="pod">
+                                <label for="">Product ID</label>
+                                <input type="text" class="product_id">
+                            </div>
+                            <div class="pod">
+                                <label for="">Variant ID (if needed)</label>
+                                <input type="text" class="variant_id">
+                            </div>
+                            <div class="pod">
+                                <label for="">Quantity to add</label>
+                                <input type="text" class="quantity">
+                            </div>
+                            <div class="spec" style="display:none;">
+                                <h4>Specific Variant IDs</h4>
+
+                                <p><strong>(optional)</strong><br>
+                                    Use if you'd like to only show some of the available variants for a product. If you'd like to show all in-stock variants, leave these fields blank.</p>
+                                <ul>
+                                    <li><input type="text" class="spec_var"><button class="add_spec">+</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="plus" style="display:none;">Add Product</button>
+
+
+                    <h3 style="float:left;margin:40px 0 20px 0;">Optional Details</h3>
+
+                    <input type="text" class="title" value="" placeholder="Offer Promo/Bundle Name/Etc. (optional)">
+                    <input type="text" class="button" value=""  placeholder="Custom Button Text (optional)">
+                </fieldset>
+            </div>
+
+            <div class="info">
+                <div class="pod">
+                    <p>Product handles looks like:</p>
+                    <ul>
+                        <li>sari-wrap-skirt</li>
+                        <li>darn-good-yarn-bowl</li>
+                        <li>lace-weight-silk-yarn</li>
+                    </ul>
+                    <p>They're lowercase, always uses dashes, and can be found at the end of the URL for the product after the last slash. <br><br>Like: https://darngoodyarn.com/products/<strong>sari-wrap-skirt</strong></p>
+                </div>
+                <div class="pod">
+                    <p>Product or Variant IDs looks like:</p>
+                    <ul>
+                        <li>14502170545024</li>
+                        <li>2052347502348502540</li>
+                        <li>4592475820435702</li>
+                    </ul>
+                    <p>They're numbers, vary in length, and can be found at the end of the URL for the product in <strong>shopify admin</strong>. <br><br>Like: https://darn-good-yarn-2.myshopify.com/admin/products/<strong>7536931270</strong>/variants/<strong>29817672646</strong></p>
+                    <p>The 1st number is the Product ID.</p>
+                    <P>The 2nd is a Variant ID, which only shows up when you click on a variant in the admin as if you were trying to edit it.</p>
+                    <p>If a product doesn't have any variants, you'll leave the variant ID field blank.</p>
+                </div>
+
+            </div>
+            <button class="clear">Clear</button>
+        </div>
+
+    </body>
+</html>
